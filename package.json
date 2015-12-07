@@ -4,7 +4,7 @@
   "description": "[Stylish Portfolio](http://startbootstrap.com/template-overviews/stylish-portfolio/) is a responsive, one page portfolio theme for [Bootstrap](http://getbootstrap.com/) created by [Start Bootstrap](http://startbootstrap.com/). The theme features multiple content sections with an off canvas navigation menu.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "browserify csv.js --outfile csv.dist.js && http-server"
   },
   "repository": {
     "type": "git",
@@ -17,6 +17,12 @@
   },
   "homepage": "https://github.com/lanbau/wdiproject2#readme",
   "dependencies": {
+    "browserify": "^12.0.1",
+    "csvtojson": "^0.4.6",
+    "ejs": "^2.3.4",
+    "express": "^4.13.3",
+    "express-generator": "^4.13.1",
+    "fast-csv": "^0.6.0",
     "http-server": "^0.8.5"
   }
 }
