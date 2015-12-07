@@ -21,19 +21,21 @@ $(document).ready(function() {
 
           // Save the profile
           userProfile = profile;
+          localStorage.setItem('profile', userProfile)
 
-          document.getElementById('login-box').style.display = 'none';
-          document.getElementById('logged-in-box').style.display = 'inline';
-
-          document.getElementById('nick').textContent = profile.nickname;
+          // window.location.href = "./admin.html";
+          document.getElementById('top').style.display = 'none';
+          document.getElementById('wrapper').style.display = 'inline-block';
+          document.getElementById('nick-name').innerHTML = profile.nickname;
         }
       });
     });
 
-
-    document.getElementById('btn-api').addEventListener('click', function() {
-        // Just call your API here. The header will be sent
-    })
+    // document.getElementById('btn-api').addEventListener('click', function() {
+    //     // Just call your API here. The header will be sent
+    //    console.log(profile.nickname)
+        
+    // })
 
 
 });

@@ -43,15 +43,15 @@
     <div class="container">
         <div class="login-page clearfix">
           <div id="login-box" class="login-box auth0-box before">
-            <img src="https://i.cloudup.com/StzWWrY34s.png" />
+            <img src="img/login-logo.png" />
             <h3>Login</h3>
             <p>Seamless Marketing Tools For Serious Marketers</p>
             <a ng-click="login()" id="btn-login" class="btn btn-primary btn-lg btn-block">Log in</a>
           </div>
           <div id="logged-in-box" class="logged-in-box auth0-box logged-in" style="display: none;">
-            <h1 id="logo"><img src="auth0_logo_final_blue_RGB.png" /></h1>
+            <img src="img/login-logo.png" />
             <h2>Welcome <span id="nick" class="nickname"></span></h2>
-            <button id="btn-api" class="btn btn-lg btn-primary btn-api">Call API</button>
+            <button id="btn-api" class="btn btn-lg btn-primary btn-api">Go Dashboard</button>
           </div>
         </div>
     </div>
@@ -61,38 +61,6 @@
 
     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
-
-    <!-- Custom Theme JavaScript -->
-    <script>
-    // Closes the sidebar menu
-    $("#menu-close").click(function(e) {
-        e.preventDefault();
-        $("#sidebar-wrapper").toggleClass("active");
-    });
-
-    // Opens the sidebar menu
-    $("#menu-toggle").click(function(e) {
-        e.preventDefault();
-        $("#sidebar-wrapper").toggleClass("active");
-    });
-
-    // Scrolls to the selected menu item on the page
-    $(function() {
-        $('a[href*=#]:not([href=#])').click(function() {
-            if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') || location.hostname == this.hostname) {
-
-                var target = $(this.hash);
-                target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-                if (target.length) {
-                    $('html,body').animate({
-                        scrollTop: target.offset().top
-                    }, 1000);
-                    return false;
-                }
-            }
-        });
-    });
-    </script>
 
 </body>
 
