@@ -36,53 +36,25 @@
     <script>try{Typekit.load();}catch(e){}</script>
     <script src="auth0-variables.js"> </script>
     <script src="app.js"> </script>
-
+    <link href="css/app.css" rel="stylesheet">
 </head>
 
 <body>
-    <!-- Header -->
-    <header id="top" class="header">
-        <div class="text-vertical-center">
-            <h1>Markething</h1>
-            <h3>All In One Marketing Platform Solution</h3>
-            <br>
-            <a href="login.html" class="btn btn-dark btn-lg">Find Out More</a>
+    <div class="container">
+        <div class="login-page clearfix">
+          <div id="login-box" class="login-box auth0-box before">
+            <img src="https://i.cloudup.com/StzWWrY34s.png" />
+            <h3>Login</h3>
+            <p>Seamless Marketing Tools For Serious Marketers</p>
+            <a ng-click="login()" id="btn-login" class="btn btn-primary btn-lg btn-block">Log in</a>
+          </div>
+          <div id="logged-in-box" class="logged-in-box auth0-box logged-in" style="display: none;">
+            <h1 id="logo"><img src="auth0_logo_final_blue_RGB.png" /></h1>
+            <h2>Welcome <span id="nick" class="nickname"></span></h2>
+            <button id="btn-api" class="btn btn-lg btn-primary btn-api">Call API</button>
+          </div>
         </div>
-    </header>
-
-    
-
-    <!-- Footer -->
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-10 col-lg-offset-1 text-center">
-                    <h4><strong>Start Bootstrap</strong>
-                    </h4>
-                    <p>3481 Melrose Place<br>Beverly Hills, CA 90210</p>
-                    <ul class="list-unstyled">
-                        <li><i class="fa fa-phone fa-fw"></i> (123) 456-7890</li>
-                        <li><i class="fa fa-envelope-o fa-fw"></i>  <a href="mailto:name@example.com">name@example.com</a>
-                        </li>
-                    </ul>
-                    <br>
-                    <ul class="list-inline">
-                        <li>
-                            <a href="#"><i class="fa fa-facebook fa-fw fa-3x"></i></a>
-                        </li>
-                        <li>
-                            <a href="#"><i class="fa fa-twitter fa-fw fa-3x"></i></a>
-                        </li>
-                        <li>
-                            <a href="#"><i class="fa fa-dribbble fa-fw fa-3x"></i></a>
-                        </li>
-                    </ul>
-                    <hr class="small">
-                    <p class="text-muted">Copyright &copy; Your Website 2014</p>
-                </div>
-            </div>
-        </div>
-    </footer>
+    </div>
 
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
